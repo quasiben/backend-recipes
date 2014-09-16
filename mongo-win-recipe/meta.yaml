@@ -1,0 +1,20 @@
+package:
+  name: mongodb
+  version: 2.6.4
+
+source:
+  fn: mongodb-win32-x86_64-2008plus-2.6.4.zip [win64]
+  url: http://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-2.6.4.zip [win64]
+  fn: mongodb-win32-i386-2.6.4.zip [win32]
+  url: http://fastdl.mongodb.org/win32/mongodb-win32-i386-2.6.4.zip [win32]
+
+build:
+  number: 0
+
+test:
+  commands:
+    - mongo.exe -version
+
+about:
+  home: http://www.mongodb.org/	
+  license: AGLP v3.0
